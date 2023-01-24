@@ -35,7 +35,7 @@
     background-color: #3e8e41;
   }
 
-  select {
+  select, #alarm-time {
     margin-top: 4rem;
     padding: 10px 20px;
     font-size: 20px;
@@ -43,4 +43,8 @@
     color: white;
     border: none;
     border-radius: 5px;
+  }
+
+  #alarm-time::placeholder {
+    color: white;
   }

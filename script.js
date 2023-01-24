@@ -1,15 +1,25 @@
+let alarmTime = 3;
 let timerId;
 let time = 0;
 let audio;
 let ringtoneSelect = document.getElementById("ringtone-select");
-let alarmTime = 3;
+let alarmTimeInput = document.getElementById("alarm-time");
 
-function startStop() {
-  if (!timerId) {
-    timerId = setInterval(() => {
-      time++;
-      document.getElementById("time").innerHTML = formatTime(time);
-      if (time === alarmTime) {
+/* 
+function changeAlarmTime() {
+  let inputValue = alarmTimeInput.value;
+    alarmTime = inputValue;
+    time = 0;
+  }
+
+  changeAlarmTime() */
+
+  function startStop() {
+    if (!timerId) {
+      timerId = setInterval(() => {
+        time++;
+        document.getElementById("time").innerHTML = formatTime(time);
+        if (time === alarmTime) {
         audio = new Audio(ringtoneSelect.value);
         audio.play();
       }
