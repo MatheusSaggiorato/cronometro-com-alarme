@@ -48,3 +48,13 @@
   #alarm-time::placeholder {
     color: white;
   }
+
+@media screen and (max-width: 550px) {
+ .buttons {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 1rem;
+    }
+}
