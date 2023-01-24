@@ -5,14 +5,13 @@ let audio;
 let ringtoneSelect = document.getElementById("ringtone-select");
 let alarmTimeInput = document.getElementById("alarm-time");
 
-/* 
+
 function changeAlarmTime() {
-  let inputValue = alarmTimeInput.value;
+  let inputValue = parseInt(alarmTimeInput.value);
     alarmTime = inputValue;
     time = 0;
+    console.log(inputValue)
   }
-
-  changeAlarmTime() */
 
   function startStop() {
     if (!timerId) {
