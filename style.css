@@ -1,0 +1,46 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+  }
+  
+  #time {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #start-stop, #reset, #pause-audio {
+    width: 160px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+
+  }
+  
+  #start-stop:hover, #reset:hover, #pause-audio:hover {
+    background-color: #3e8e41;
+  }
+
+  select {
+    margin-top: 4rem;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }

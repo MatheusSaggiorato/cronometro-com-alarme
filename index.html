@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Cronômetro com Alarme</title>
+</head>
+
+<body>
+
+    <div id="timer">
+        <p id="time">00:00:00</p>
+        <div class="buttons">
+            <button id="start-stop" onclick="startStop()">Start/Stop</button>
+            <button id="reset" onclick="reset()">Reset</button>
+            <button id="pause-audio" onclick="pauseAudio()">Pause Audio</button>
+        </div>
+
+        <select id="ringtone-select">
+            <option value="./assets/levanta-dessa-cama.mp3">Levanta dessa cama</option>
+            <option value="./assets/eletronic-ringtone.mp3">Eletronic ringtone</option>
+        </select>
+
+        <label for="alarm-time">Alarm Time (seconds):</label>
+        <input type="number" id="alarm-time" min="1" oninput="changeAlarmTime()">
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
